@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+
+  body {
+  background-color: #f3eedd;
+  width: 340px;
+  overflow:scroll;
+    overflow-x:hidden;
+  }
+
+
+
+
+
+
+</style>
+
+
+<body>
+  <p align="right">
+      <button type="button" name="Back"><a href="Hola Corea.html">Back</a></button>
+  </p>
+
+<a href="https://map.kakao.com/link/to/17532298" target="_blank"><img src="홍대 지도.png" width="95%"></a>
+지도를 클릭하시면 현재 위치에서 집까지 길 찾기를 실헹합니다.
+<br><br><br>
+
+
+<p id="copy">서울 마포구 와우산로27길 50</p>
+<button type="button"  onclick="copyEvent('copy')">Copy</button>
+<br><br>
+copy 버튼을 누르시면 주소가 복사됩니다.
+                <script>
+                    function copyEvent(id)
+                    {
+                        var str = document.getElementById(id);
+                        window.getSelection().selectAllChildren(str);
+                        document.execCommand("Copy")
+                    }
+
+
+</script>
+</body>
+</html>
